@@ -1,7 +1,6 @@
-title: Jack's Personal Site
+title: jackl.cat
 description: Writing, projects, and notes.
-url: ""
-baseurl: ""
+url: "https://jackl.cat/"
 
 permalink: /writing/:title/
 
