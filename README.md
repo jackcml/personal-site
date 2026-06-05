@@ -1,6 +1,6 @@
 # Personal Site
 
-A small Jekyll site for writing and project links.
+A small Jekyll site with a one-page index, linked writing posts, and project links.
 
 ## Run Locally
 
@@ -26,6 +26,7 @@ Each post should start with front matter:
 layout: post
 title: "Post Title"
 date: 2026-06-04
+description: "A short summary for the homepage."
 ---
 ```
 

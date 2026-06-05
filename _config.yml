@@ -5,10 +5,6 @@ baseurl: ""
 
 permalink: /writing/:title/
 
-collections:
-  projects:
-    output: false
-
 markdown: kramdown
 
 exclude:
