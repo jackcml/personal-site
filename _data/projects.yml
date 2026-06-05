@@ -1,0 +1,6 @@
+- name: Example Project
+  description: A short description of what this project does and why it exists.
+  url: https://example.com
+  tags:
+    - Web
+    - Writing

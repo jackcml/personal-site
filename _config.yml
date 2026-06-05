@@ -1,0 +1,17 @@
+title: Jack's Personal Site
+description: Writing, projects, and notes.
+url: ""
+baseurl: ""
+
+permalink: /writing/:title/
+
+collections:
+  projects:
+    output: false
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
