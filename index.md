@@ -4,17 +4,15 @@ title: Home
 ---
 
 <section class="intro">
-  <p class="eyebrow">Personal site</p>
-  <h1>Writing, projects, and notes.</h1>
   <p>
-    A small home on the web for essays, experiments, and links to work worth sharing.
+    writing, links, notes, etc.
   </p>
 </section>
 
 <section class="section-grid" aria-label="Recent writing and projects">
   <div>
     <div class="section-heading">
-      <h2>Writing</h2>
+      <h2>writing</h2>
     </div>
 
     <div class="list">
@@ -32,7 +30,7 @@ title: Home
 
   <div>
     <div class="section-heading">
-      <h2>Projects</h2>
+      <h2>projects</h2>
     </div>
 
     <div class="list">
