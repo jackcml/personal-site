@@ -1,7 +1,7 @@
 :root {
-  --bg: #fbfaf7;
+  --bg: #f3f2ee;
   --panel: #ffffff;
-  --text: #242424;
+  --text: #1f0909;
   --muted: #68625b;
   --line: #ded9d1;
   --accent: #236c5a;
@@ -15,9 +15,9 @@
 html {
   color: var(--text);
   background: var(--bg);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Georgia", "Times New Roman", Times, serif;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.5em;
 }
 
 body {
@@ -47,7 +47,6 @@ a:hover {
   justify-content: space-between;
   gap: 1rem;
   padding: 1.25rem 0;
-  border-bottom: 1px solid var(--line);
 }
 
 .site-title {
@@ -57,12 +56,11 @@ a:hover {
 }
 
 .site-main {
-  padding: 4rem 0;
 }
 
 .intro {
   max-width: 760px;
-  padding-bottom: 4rem;
+  padding: 1rem 0;
 }
 
 .intro h1,
@@ -154,7 +152,7 @@ a:hover {
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
+  gap: 0.25rem;
   justify-content: flex-end;
   max-width: 18rem;
   padding: 0;
@@ -168,19 +166,17 @@ a:hover {
 }
 
 .tags li {
-  padding: 0.18rem 0.5rem;
+  padding: 0.05rem 0.45rem;
   border: 1px solid var(--line);
-  border-radius: 999px;
   color: var(--muted);
   background: var(--panel);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
 }
 
 .site-footer {
   padding: 1.5rem 0 2rem;
-  border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 720px) {
@@ -193,12 +189,8 @@ a:hover {
     display: block;
   }
 
-  .site-main {
-    padding: 3rem 0;
-  }
-
   .intro {
-    padding-bottom: 3rem;
+    padding: 0 0 1rem 0;
   }
 
   .section-grid > * + * {
