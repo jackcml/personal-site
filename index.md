@@ -17,11 +17,24 @@ title: Home
 
     <div class="list">
       {% for post in site.posts %}
+        {% assign post_timestamp = post.date | date: "%s" %}
+        {% assign site_timestamp = site.time | date: "%s" %}
+        {% assign is_upcoming = false %}
+        {% if post_timestamp > site_timestamp %}
+          {% assign is_upcoming = true %}
+        {% endif %}
+
         <article class="list-item">
           <p class="meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <h3>
+            {% if is_upcoming %}
+              {{ post.title }}
+            {% else %}
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% endif %}
+          </h3>
           {% if post.description %}
-            <p>{{ post.description }}</p>
+            <p>{% if is_upcoming %}Upcoming. {% endif %}{{ post.description }}</p>
           {% endif %}
         </article>
       {% endfor %}

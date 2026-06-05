@@ -5,6 +5,7 @@ url: "https://jackl.cat/"
 permalink: /writing/:title/
 
 markdown: kramdown
+future: true
 
 exclude:
   - Gemfile

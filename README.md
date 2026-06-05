@@ -30,6 +30,10 @@ description: "A short summary for the homepage."
 ---
 ```
 
+Future-dated posts are shown on the homepage as upcoming items. They are not linked
+from the homepage until their date arrives, and their description is prefixed with
+`Upcoming.`
+
 ## Add Projects
 
 Edit `_data/projects.yml`.
