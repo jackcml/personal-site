@@ -1,6 +1,18 @@
-- name: Example Project
-  description: A short description of what this project does and why it exists.
-  url: https://example.com
-  tags:
-    - Web
-    - Writing
+#- name: Example Project
+#  description: A short description of what this project does and why it exists.
+#  url: https://example.com
+#  tags:
+#    - Web
+#    - Writing
+
+- name: DggNative
+  description: "Cross-platform GUI chat client for use with Destiny.gg WebSocket protocol."
+  url: https://github.com/jackcml/DggNative
+
+- name: REBOOT MCP
+  description: "Capstone repo. Exposes surface for ingestion and search of codebases using knowledge graphs, with an evaluation harness for context-fetch ability on SWE-Bench tasks."
+  url: https://github.com/jackcml/reboot-mcp
+
+- name: substack2md
+  description: "Substack scraper with Markdown conversion. Will eventually pipe through pandoc for EPUBs with working footnotes and support mass export."
+  url: https://github.com/jackcml/substack2md
