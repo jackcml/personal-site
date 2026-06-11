@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AGI and Animals"
-date: 2026-06-12
+date: 2026-06-15
 description: "An optimistic overview of how transformative AI might affect animal welfare."
 ---
 
