@@ -12,6 +12,10 @@ layout: default
   </header>
 
   <div class="content">
-    {{ content }}
+    {% if page.unpublished %}
+      <p>This post isn’t published yet.</p>
+    {% else %}
+      {{ content }}
+    {% endif %}
   </div>
 </article>

@@ -19,8 +19,14 @@ title: Home
       {% for post in site.posts %}
         {% assign post_timestamp = post.date | date: "%s" %}
         {% assign site_timestamp = site.time | date: "%s" %}
+        {% comment %}
+          A post is "live" only when its date has passed AND it is not held back
+          with `unpublished: true`. The flag is the human-in-the-loop gate: a
+          dated post never auto-publishes on date-change while the flag is set.
+          Remove the flag to publish.
+        {% endcomment %}
         {% assign is_upcoming = false %}
-        {% if post_timestamp > site_timestamp %}
+        {% if post.unpublished or post_timestamp > site_timestamp %}
           {% assign is_upcoming = true %}
         {% endif %}
 
