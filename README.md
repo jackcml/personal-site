@@ -34,6 +34,26 @@ Future-dated posts are shown on the homepage as upcoming items. They are not lin
 from the homepage until their date arrives, and their description is prefixed with
 `Upcoming.`
 
+### Overriding the displayed date
+
+The `date` field still drives ordering and publishing, but you can override the
+date *shown* on the homepage and post page with an arbitrary string by adding
+`display_date`. This is handy when the exact date is unknown and you only want to
+show, say, a year or month:
+
+```yaml
+---
+layout: post
+title: "Post Title"
+date: 2026-06-04
+description: "A short summary for the homepage."
+display_date: "2026"
+---
+```
+
+Keep a full `YYYY-MM-DD` `date` (and filename) for correct ordering; `display_date`
+only changes what readers see.
+
 ### Holding a post back (human-in-the-loop publishing)
 
 Add `unpublished: true` to a post's front matter to keep it from going live, even

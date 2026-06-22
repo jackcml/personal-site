@@ -31,7 +31,7 @@ title: Home
         {% endif %}
 
         <article class="list-item">
-          <p class="meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+          <p class="meta">{% if post.display_date %}{{ post.display_date }}{% else %}{{ post.date | date: "%B %-d, %Y" }}{% endif %}</p>
           <h3>
             {% if is_upcoming %}
               {{ post.title }}
