@@ -9,6 +9,10 @@
   description: "Cross-platform GUI chat client for use with Destiny.gg WebSocket protocol."
   url: https://github.com/jackcml/DggNative
 
+- name: heddle
+  description: "A domain-specific language for image and video transformation. WIP."
+  url: https://github.com/jackcml/heddle
+
 - name: REBOOT MCP
   description: "Capstone repo. Exposes surface for ingestion and search of codebases using knowledge graphs, with an evaluation harness for context-fetch ability on SWE-Bench tasks."
   url: https://github.com/jackcml/reboot-mcp
