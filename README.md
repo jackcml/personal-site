@@ -54,6 +54,22 @@ display_date: "2026"
 Keep a full `YYYY-MM-DD` `date` (and filename) for correct ordering; `display_date`
 only changes what readers see.
 
+### Marking a post as updated
+
+Add `updated` with a date to note that a published post was revised after its
+original `date`. It's shown alongside the published date on the post page (not
+the homepage, to keep that list uncluttered) as "(updated ...)":
+
+```yaml
+---
+layout: post
+title: "Post Title"
+date: 2026-06-04
+description: "A short summary for the homepage."
+updated: 2026-06-10
+---
+```
+
 ### Holding a post back (human-in-the-loop publishing)
 
 Add `unpublished: true` to a post's front matter to keep it from going live, even
