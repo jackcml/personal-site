@@ -1,23 +1,17 @@
-# Personal Site
+# personal-site
 
-A small Jekyll site with a one-page index, linked writing posts, and project links.
+A small Jekyll site with a one-page index, blogposts, and project links.
 
-## Run Locally
+## Run
 
 ```sh
 bundle install
 bundle exec jekyll serve
 ```
 
-Then open http://localhost:4000.
+## Post format
 
-## Add Writing
-
-Create Markdown files in `_posts/` using this filename format:
-
-```text
-YYYY-MM-DD-title.md
-```
+Markdown files in `_posts/` with filenames: `YYYY-MM-DD-title.md`
 
 Each post should start with front matter:
 
@@ -25,72 +19,32 @@ Each post should start with front matter:
 ---
 layout: post
 title: "Post Title"
-date: 2026-06-04
-description: "A short summary for the homepage."
+date: YYYY-MM-DD
+description: "A short summary for the index."
 ---
 ```
 
-Future-dated posts are shown on the homepage as upcoming items. They are not linked
-from the homepage until their date arrives, and their description is prefixed with
-`Upcoming.`
+Future-dated posts are shown on the index as upcoming items, unlinked.
 
-### Overriding the displayed date
-
-The `date` field still drives ordering and publishing, but you can override the
-date *shown* on the homepage and post page with an arbitrary string by adding
-`display_date`. This is handy when the exact date is unknown and you only want to
-show, say, a year or month:
+Addtional optional values described below:
 
 ```yaml
----
-layout: post
-title: "Post Title"
-date: 2026-06-04
-description: "A short summary for the homepage."
-display_date: "2026"
----
-```
-
-Keep a full `YYYY-MM-DD` `date` (and filename) for correct ordering; `display_date`
-only changes what readers see.
-
-### Marking a post as updated
-
-Add `updated` with a date to note that a published post was revised after its
-original `date`. It's shown alongside the published date on the post page (not
-the homepage, to keep that list uncluttered) as "(updated ...)":
-
-```yaml
----
-layout: post
-title: "Post Title"
-date: 2026-06-04
-description: "A short summary for the homepage."
-updated: 2026-06-10
----
-```
-
-### Holding a post back (human-in-the-loop publishing)
-
-Add `unpublished: true` to a post's front matter to keep it from going live, even
-once its date has passed:
-
-```yaml
----
-layout: post
-title: "Post Title"
-date: 2026-06-04
-description: "A short summary for the homepage."
+display_date: "Custom override date string"
+updated: YYYY-MM-DD
 unpublished: true
----
 ```
 
-While the flag is set, the post stays an `Upcoming.` teaser (no link) on the
-homepage and its page renders a placeholder instead of the body. A post only goes
-live when its date has passed **and** the flag is absent — so a dated post never
-auto-publishes on date-change while it is held. To publish, delete the
-`unpublished:` line.
+The `date` field drives order/release, but you can override the
+date *shown* on the index with an arbitrary string with `display_date`.
+This is useful if an exact date is unknown and you only want to
+show, say, a year or month.
 
-## Add Projects
+An `updated` date notes the most recent revision after first publishing,
+and is shown alongside the published date on the post page
+(but not the index) as "(updated ...)".
+
+The `unpublished` boolean holds back auto-publication on `date`.
+
+## Project link format
 
 Edit `_data/projects.yml`.
