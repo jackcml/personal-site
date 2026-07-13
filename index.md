@@ -3,40 +3,70 @@ layout: default
 title: Home
 ---
 
-<section class="intro" aria-labelledby="intro-title">
-  <div class="intro-copy">
-    <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> jack’s homepage · online!</p>
-    <h1 id="intro-title">
-      <span>words,</span>
-      <span>code &amp;</span>
-      <span>rabbit holes.</span>
-    </h1>
-    <p class="intro-lede">
-      Hi, I’m Jack. I write about computers, books, and whichever rabbit hole is
-      winning; I also make small software projects when writing about them isn’t enough.
-    </p>
-    <div class="intro-links" aria-label="Jump to a section">
-      <a class="button-link" href="#writing">read the blog <span aria-hidden="true">→</span></a>
-      <a class="text-link" href="#projects">see my projects ↓</a>
-    </div>
+<section class="webcat-game" aria-labelledby="webcat-title">
+  <div class="webcat-titlebar">
+    <h1 id="webcat-title">webcat.exe :: purr acquisition terminal</h1>
+    <span class="save-status" aria-hidden="true">[ autosave: on ]</span>
   </div>
 
-  <aside class="webcat" aria-label="Resident webcat">
-    <div class="webcat-titlebar">
-      <span>webcat.exe</span>
-      <span aria-hidden="true">×</span>
-    </div>
-    <div class="webcat-body">
-      <div class="cat-face" aria-hidden="true">
-        <span class="cat-ears">/\_/\</span>
-        <span>( o.o )</span>
-        <span>&gt; ^ &lt;</span>
+  <div class="webcat-game-grid">
+    <div class="cat-console">
+      <div class="purr-display">
+        <p>purr balance</p>
+        <strong data-purr-count>0</strong>
+        <span><b data-purr-rate>0</b> per second</span>
       </div>
-      <p class="cat-message" aria-live="polite">the webcat is thinking...</p>
-      <button class="pet-button" type="button">pet the webcat <span aria-hidden="true">♡</span></button>
-      <p class="pet-count"><span data-purr-count>0</span> purrs on this browser</p>
+
+      <button class="cat-button" type="button" aria-label="Pet the webcat">
+        <span class="cat-face" aria-hidden="true">
+          <span>/\_/\</span>
+          <span>( o.o )</span>
+          <span>&gt; ^ &lt;</span>
+        </span>
+        <span class="pet-prompt">pet webcat&nbsp; [+<b data-click-power>1</b>]</span>
+      </button>
+
+      <p class="cat-message" aria-live="polite">webcat is accepting visitors...</p>
+      <p class="cat-rank">friendship status: <strong data-cat-rank>complete stranger</strong></p>
     </div>
-  </aside>
+
+    <aside class="cat-shop" aria-labelledby="shop-title">
+      <div class="shop-heading">
+        <div>
+          <p class="section-number">c:/webcat/supplies</p>
+          <h2 id="shop-title">cat supply store</h2>
+        </div>
+        <span aria-hidden="true">$</span>
+      </div>
+      <p class="shop-help">Spend purrs to improve local cat infrastructure.</p>
+
+      <div class="upgrade-list">
+        <button class="upgrade" type="button" data-upgrade="yarn">
+          <span class="upgrade-icon" aria-hidden="true">(=)</span>
+          <span class="upgrade-copy"><strong>yarn ball</strong><small>+1 purr per pet</small></span>
+          <span class="upgrade-meta"><b><span data-cost>10</span> purrs</b><small>owned: <span data-owned>0</span></small></span>
+        </button>
+
+        <button class="upgrade" type="button" data-upgrade="scritcher">
+          <span class="upgrade-icon" aria-hidden="true">///</span>
+          <span class="upgrade-copy"><strong>auto-scritcher</strong><small>+1 purr per second</small></span>
+          <span class="upgrade-meta"><b><span data-cost>35</span> purrs</b><small>owned: <span data-owned>0</span></small></span>
+        </button>
+
+        <button class="upgrade" type="button" data-upgrade="modem">
+          <span class="upgrade-icon" aria-hidden="true">56k</span>
+          <span class="upgrade-copy"><strong>catnip modem</strong><small>+5 purrs per second</small></span>
+          <span class="upgrade-meta"><b><span data-cost>120</span> purrs</b><small>owned: <span data-owned>0</span></small></span>
+        </button>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="game-footer">
+    <p>lifetime purrs: <strong data-lifetime-purrs>0</strong></p>
+    <p>progress lives in this browser only</p>
+    <button class="reset-game" type="button">erase save</button>
+  </footer>
 </section>
 
 <div class="tiny-divider" aria-hidden="true"><span>*</span><span>+</span><span>*</span></div>
