@@ -6,7 +6,7 @@
 #    - Writing
 
 - name: DggNative
-  description: "Cross-platform GUI chat client for use with Destiny.gg WebSocket protocol."
+  description: "Cross-platform GUI chat client for use with Destiny.gg WebSocket protocol, plus a drop-in, open alternative server."
   url: https://github.com/jackcml/DggNative
 
 - name: heddle
@@ -18,5 +18,5 @@
   url: https://github.com/jackcml/reboot-mcp
 
 - name: substack2md
-  description: "Substack scraper with Markdown conversion. Will eventually pipe through pandoc for EPUBs with working footnotes and support mass export."
+  description: "Substack scraper with Markdown conversion. Pipe through pandoc for EPUBs with working footnotes. Will eventually support mass export."
   url: https://github.com/jackcml/substack2md
