@@ -797,12 +797,6 @@ a:focus-visible {
 
 .site-footer p { margin: 0; }
 
-.site-footer .footer-signoff {
-  margin-bottom: 0.2rem;
-  color: var(--text);
-  font-weight: 700;
-}
-
 .back-to-top {
   flex: 0 0 auto;
   color: var(--text);
@@ -1091,8 +1085,6 @@ a:focus-visible {
   .site-note { align-items: flex-start; }
 
   .site-footer {
-    align-items: flex-start;
-    flex-direction: column;
     padding: 1rem;
   }
 
