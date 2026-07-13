@@ -691,7 +691,6 @@ a:focus-visible {
   place-items: center;
   background: var(--panel);
   font: 700 0.7rem/1 var(--mono);
-  transform: rotate(7deg);
 }
 
 .list {
