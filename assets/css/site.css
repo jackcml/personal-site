@@ -609,7 +609,7 @@ a:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: clamp(3rem, 8vw, 6rem) 0;
+  margin: 3.5rem 0;
   color: var(--pink);
 }
 
@@ -1054,8 +1054,6 @@ a:focus-visible {
     flex-direction: column;
     gap: 0.2rem;
   }
-
-  .tiny-divider { margin: 3.6rem 0; }
 
   .section-heading,
   .list { padding-right: 1rem; padding-left: 1rem; }
