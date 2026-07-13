@@ -19,14 +19,18 @@
   <body id="top">
     <a class="skip-link" href="#main-content">skip to the good stuff</a>
 
+    {% capture ticker_items %}
+      <span>✦ best viewed with curiosity ✦</span>
+      <span>✦ humans and others welcome ✦</span>
+      <span>✦ i meant computer minds but im realizing that cats were the clear point of reference ✦</span>
+      <span>✦ use openpaw, not claw code ✦</span>
+      <span>✦ officials say americans need protection from ASI (aegean and sphynxian intelligences) ✦</span>
+      <span>✦✦✦</span>
+    {% endcapture %}
     <div class="ticker" aria-hidden="true">
       <div class="ticker-track">
-        <span>✦ best viewed with curiosity ✦</span>
-        <span>✦ humans and others welcome ✦</span>
-        <span>✦ i meant computer minds but im realizing that cats were the clear point of reference ✦</span>
-        <span>✦ use openpaw, not claw code ✦</span>
-        <span>✦ officials say americans need protection from ASI (aegean and sphynxian intelligences) ✦</span>
-        <span>✦✦✦</span>
+        <div class="ticker-group">{{ ticker_items }}</div>
+        <div class="ticker-group">{{ ticker_items }}</div>
       </div>
     </div>
 

@@ -146,16 +146,22 @@ a:focus-visible {
 .ticker-track {
   display: flex;
   width: max-content;
-  animation: ticker 30s linear infinite;
+  animation: ticker 45s linear infinite;
+  will-change: transform;
 }
 
-.ticker span {
-  display: inline-block;
+.ticker-group {
+  display: flex;
+  flex: none;
+}
+
+.ticker-group span {
+  flex: none;
   padding-right: 4rem;
 }
 
 @keyframes ticker {
-  to { transform: translateX(-50%); }
+  to { transform: translate3d(-50%, 0, 0); }
 }
 
 .page-shell {
