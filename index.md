@@ -139,8 +139,3 @@ title: Home
     </div>
   </div>
 </section>
-
-<aside class="site-note">
-  <span aria-hidden="true">☻</span>
-  <p><strong>you made it to the bottom!</strong> Thanks for visiting my website. Please imagine that I have a cool guestbook here.</p>
-</aside>

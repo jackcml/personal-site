@@ -761,28 +761,6 @@ a:focus-visible {
   font: 0.58rem/1.4 var(--mono);
 }
 
-.site-note {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  max-width: 580px;
-  margin: 3.5rem auto 0;
-  padding: 0.8rem 1.1rem;
-  border: 1px dashed var(--line);
-  background: var(--pink-soft);
-  transform: rotate(-0.5deg);
-}
-
-.site-note > span {
-  font-size: 1.65rem;
-  transform: rotate(-9deg);
-}
-
-.site-note p {
-  margin: 0;
-  font: 0.7rem/1.5 var(--mono);
-}
-
 .site-footer {
   display: flex;
   align-items: flex-end;
@@ -1081,8 +1059,6 @@ a:focus-visible {
 
   .section-heading,
   .list { padding-right: 1rem; padding-left: 1rem; }
-
-  .site-note { align-items: flex-start; }
 
   .site-footer {
     padding: 1rem;
