@@ -211,21 +211,6 @@ a:focus-visible {
 
 .site-title:hover { color: var(--pink); }
 
-.site-title-mark {
-  display: inline-grid;
-  width: 1.45em;
-  height: 1.45em;
-  margin-right: 0.4rem;
-  border: 1px solid var(--line);
-  border-radius: 50% 48% 45% 52%;
-  place-items: center;
-  color: var(--paper);
-  background: var(--pink);
-  font-family: var(--display);
-  font-style: italic;
-  transform: rotate(-7deg);
-}
-
 .cursor {
   color: var(--pink);
   animation: blink 1.2s steps(1) infinite;
@@ -1047,7 +1032,6 @@ a:focus-visible {
   }
 
   .site-title { font-size: 1.08rem; }
-  .site-title-mark { display: none; }
 
   .site-nav {
     grid-column: 1 / -1;
