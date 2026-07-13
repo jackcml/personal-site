@@ -3,13 +3,18 @@ layout: default
 ---
 
 <article class="post">
+  <a class="post-back" href="{{ '/#writing' | relative_url }}">← back to the writing pile</a>
+
   <header class="page-header">
-    <p class="eyebrow">{% if page.display_date %}{{ page.display_date }}{% else %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}{% if page.updated %} (updated {{ page.updated | date: "%B %-d, %Y" }}){% endif %}</p>
+    <p class="eyebrow">filed under: writing.txt</p>
     <h1>{{ page.title }}</h1>
-    {% if page.description %}
-      <p>{{ page.description }}</p>
-    {% endif %}
+    <div class="post-details">
+      <p class="meta">{% if page.display_date %}{{ page.display_date }}{% else %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}{% if page.updated %} · updated {{ page.updated | date: "%B %-d, %Y" }}{% endif %}</p>
+      {% if page.description %}<p class="post-description">{{ page.description }}</p>{% endif %}
+    </div>
   </header>
+
+  <div class="post-rule" aria-hidden="true"><span>✦</span></div>
 
   <div class="content">
     {% if page.unpublished %}
@@ -18,4 +23,9 @@ layout: default
       {{ content }}
     {% endif %}
   </div>
+
+  <footer class="post-footer">
+    <span aria-hidden="true">~ fin ~</span>
+    <a href="{{ '/#writing' | relative_url }}">more writing this way →</a>
+  </footer>
 </article>
