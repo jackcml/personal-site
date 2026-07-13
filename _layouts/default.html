@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title and page.title != 'Home' %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    {% assign document_title = page.title %}
+    {% if page.reading_id %}
+      {% assign reading_title_match = site.data.reading | where: "id", page.reading_id | first %}
+      {% if reading_title_match %}{% assign document_title = reading_title_match.title %}{% endif %}
+    {% endif %}
+    <title>{% if document_title and document_title != 'Home' %}{{ document_title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
     <meta name="theme-color" content="#fff8e8">
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
@@ -45,6 +50,7 @@
           <a href="{{ '/' | relative_url }}">home</a>
           <a href="{{ '/#writing' | relative_url }}">writing</a>
           <a href="{{ '/#projects' | relative_url }}">projects</a>
+          <a href="{{ '/reading/' | relative_url }}">reading</a>
         </nav>
 
         <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">

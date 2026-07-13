@@ -7,6 +7,18 @@ permalink: /writing/:title/
 markdown: kramdown
 future: true
 
+collections:
+  reading_notes:
+    output: true
+    permalink: /reading/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: reading_notes
+    values:
+      layout: reading-note
+
 exclude:
   - Gemfile
   - Gemfile.lock

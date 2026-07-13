@@ -52,3 +52,36 @@ opening paragraph is too short for it. Drop caps are enabled by default.
 ## Project link format
 
 Edit `_data/projects.yml`.
+
+## Reading log format
+
+Add reading-log entries to `_data/reading.yml`. Each entry needs a stable `id`,
+title, and ISO-formatted `read_date`; the other fields are optional:
+
+```yaml
+- id: the-dispossessed
+  title: The Dispossessed
+  author: Ursula K. Le Guin
+  kind: book
+  status: finished
+  read_date: 2026-07-13
+  url: https://example.com/the-dispossessed
+```
+
+The reading page sorts entries by `read_date` and groups them by year.
+
+For an entry with notes, add a Markdown file to `_reading_notes/`. Its
+`reading_id` must match the entry's `id`; no title, author, or date needs to be
+duplicated:
+
+```markdown
+---
+reading_id: the-dispossessed
+---
+
+Notes go here. They can use ordinary Markdown.
+```
+
+The note will automatically receive a `/reading/<filename>/` page and a link
+from its reading-log entry. Entries without a matching note remain plain log
+items.

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{% assign reading_match = site.data.reading | where: "id", page.reading_id | first %}
+
+<article class="reading-note">
+  <a class="post-back" href="{{ '/reading/' | relative_url }}">← back to the shelf</a>
+
+  <header class="reading-note-header">
+    <p class="eyebrow">reading notes{% if reading_match.kind %} / {{ reading_match.kind }}{% endif %}</p>
+    <h1>{{ reading_match.title | default: page.title }}</h1>
+    {% if reading_match.author %}<p class="reading-note-author">by {{ reading_match.author }}</p>{% endif %}
+
+    {% if reading_match %}
+      <dl class="reading-note-facts">
+        {% if reading_match.read_date %}
+        <div>
+          <dt>read</dt>
+          <dd><time datetime="{{ reading_match.read_date | date: '%Y-%m-%d' }}">{{ reading_match.read_date | date: "%B %-d, %Y" }}</time></dd>
+        </div>
+        {% endif %}
+        {% if reading_match.url %}
+          <div>
+            <dt>elsewhere</dt>
+            <dd><a href="{{ reading_match.url }}">source ↗</a></dd>
+          </div>
+        {% endif %}
+      </dl>
+    {% endif %}
+
+    <p class="note-caveat"><span aria-hidden="true">*</span> potentially informal/wip notes below</p>
+  </header>
+
+  <div class="post-rule" aria-hidden="true"><span>+</span></div>
+
+  <div class="content note-content">
+    {{ content }}
+  </div>
+
+  <footer class="reading-note-footer">
+    <span aria-hidden="true">[ end notes ]</span>
+    <a href="{{ '/reading/' | relative_url }}">return to shelf →</a>
+  </footer>
+</article>

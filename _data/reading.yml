@@ -1,0 +1,14 @@
+- id: meditations-on-first-philosophy
+  title: Meditations on First Philosophy
+  author: René Descartes
+  kind: book
+  status: finished
+  read_date: 2026-07-07
+
+- id: compatibilism-sep
+  title: Compatibilism (Stanford Encyclopedia of Philosophy)
+  author: M. McKenna, D. J. Coates
+  kind: book-section
+  status: in-progress
+  read_date: 2026-06-21
+  url: https://plato.stanford.edu/entries/compatibilism/
