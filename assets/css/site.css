@@ -14,6 +14,7 @@
   --green: #50806c;
   --green-soft: #d4eadc;
   --yellow: #f4ca62;
+  --yellow-ink: #332925;
   --blue: #617da7;
   --shadow: #cbbdaa;
   --selection: #ffc6da;
@@ -121,7 +122,7 @@ a:focus-visible {
   top: 0.7rem;
   left: 0.7rem;
   padding: 0.45rem 0.7rem;
-  color: var(--text);
+  color: var(--yellow-ink);
   background: var(--yellow);
   font: 700 0.75rem/1 var(--mono);
   transform: translateY(-160%);
@@ -256,7 +257,7 @@ a:focus-visible {
 }
 
 .theme-toggle:hover {
-  color: #332925;
+  color: var(--yellow-ink);
   background: var(--yellow);
   transform: translate(-1px, -1px);
   box-shadow: 3px 3px 0 var(--line);
@@ -411,7 +412,7 @@ a:focus-visible {
   padding: 0.55rem 0.8rem;
   border: 1.5px solid var(--line);
   border-radius: 2px;
-  color: #332925;
+  color: var(--yellow-ink);
   background: var(--yellow);
   box-shadow: 3px 3px 0 var(--line);
   font: 700 0.65rem/1 var(--mono);
@@ -490,7 +491,7 @@ a:focus-visible {
   border: 1px solid var(--line);
   border-radius: 50%;
   place-items: center;
-  color: var(--text);
+  color: var(--yellow-ink);
   background: var(--yellow);
   font: 700 0.9rem/1 var(--mono);
 }
@@ -735,7 +736,7 @@ a:focus-visible {
   padding: 0.1rem 0.35rem;
   border: 1px solid var(--line-soft);
   border-radius: 2px;
-  color: #332925;
+  color: var(--yellow-ink);
   background: var(--yellow);
   font: 700 0.58rem/1.4 var(--mono);
   text-transform: uppercase;
@@ -777,7 +778,7 @@ a:focus-visible {
 
 .back-to-top {
   flex: 0 0 auto;
-  color: var(--text);
+  color: var(--yellow-ink);
   font-weight: 700;
 }
 
@@ -915,14 +916,14 @@ a:focus-visible {
   padding: 0.28rem 0.48rem;
   border: 1px solid var(--line);
   border-radius: 2px;
-  color: var(--text);
+  color: var(--yellow-ink);
   background: var(--yellow);
   box-shadow: 2px 2px 0 var(--line);
   text-decoration: none;
 }
 
 .reading-item-links .reading-notes-link:hover {
-  color: #332925;
+  color: var(--yellow-ink);
   transform: translate(-1px, -1px);
   box-shadow: 3px 3px 0 var(--line);
 }
