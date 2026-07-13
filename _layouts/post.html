@@ -16,7 +16,7 @@ layout: default
 
   <div class="post-rule" aria-hidden="true"><span>✦</span></div>
 
-  <div class="content">
+  <div class="content{% unless page.drop_cap == false %} has-drop-cap{% endunless %}">
     {% if page.unpublished %}
       <p>This post isn’t published yet.</p>
     {% else %}

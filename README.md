@@ -32,6 +32,7 @@ Addtional optional values described below:
 display_date: "Custom override date string"
 updated: YYYY-MM-DD
 unpublished: true
+drop_cap: false
 ```
 
 The `date` field drives order/release, but you can override the
@@ -44,6 +45,9 @@ and is shown alongside the published date on the post page
 (but not the index) as "(updated ...)".
 
 The `unpublished` boolean holds back auto-publication on `date`.
+
+Set `drop_cap: false` to disable the oversized first letter on a post whose
+opening paragraph is too short for it. Drop caps are enabled by default.
 
 ## Project link format
 

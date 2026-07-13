@@ -3,6 +3,7 @@ layout: post
 title: "Existing Knowledge Graphs as Codebase Context for Agents"
 date: 2026-05-20
 description: "Capstone retrospective. Scaffolding Graphiti for code ingestion and evaluating against subagent exploration."
+drop_cap: false
 ---
 
 *Mirrored from [99P Labs' Medium](https://medium.com/99p-labs/existing-knowledge-graphs-as-codebase-context-for-agents-1c8e3da3a400). Relevant code can be found in [the GitHub repository](https://github.com/jackcml/reboot-mcp).*
