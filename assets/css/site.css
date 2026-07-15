@@ -991,7 +991,7 @@ a:focus-visible {
 
 .back-to-top {
   flex: 0 0 auto;
-  color: var(--yellow-ink);
+  color: var(--text);
   font-weight: 700;
 }
 
