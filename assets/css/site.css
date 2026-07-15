@@ -308,33 +308,10 @@ a:focus-visible {
 .featured-app-titlebar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
   padding: 0.55rem 0.75rem;
   border-bottom: 1.5px solid var(--line);
   background: var(--green-soft);
   font: 700 0.6rem/1 var(--mono);
-}
-
-.live-indicator {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  color: var(--muted);
-  text-transform: uppercase;
-}
-
-.live-indicator i {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--green) 18%, transparent);
-  animation: live-pulse 2s ease-in-out infinite;
-}
-
-@keyframes live-pulse {
-  50% { box-shadow: 0 0 0 6px transparent; }
 }
 
 .featured-app-body {

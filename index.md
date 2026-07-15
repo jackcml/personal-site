@@ -7,7 +7,6 @@ title: Home
 <article class="featured-app" aria-labelledby="misapad-title">
   <div class="featured-app-titlebar">
     <span>featured_deployment.html</span>
-    <span class="live-indicator"><i aria-hidden="true"></i> live now</span>
   </div>
 
   <div class="featured-app-body">
