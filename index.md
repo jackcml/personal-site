@@ -14,8 +14,9 @@ title: Home
     <h1 id="misapad-title">misa<span>pad</span></h1>
     <p class="featured-app-lede">An LLM pair-writing frontend, updated for the chat-completion era.</p>
     <p class="featured-app-copy">
-      The app is deployed and ready to use in the browser. Bring a thought,
-      find a model, and write something together.
+      A <a href="https://lmg-anon.github.io/mikupad/">mikupad</a> for modernity: first-class support for chat models,
+      emulating text completion. All local, or BYOAPI. Track who wrote what with highlighting, and prompt
+      inline for rewrites or insertions.
     </p>
 
     <div class="featured-app-actions">
