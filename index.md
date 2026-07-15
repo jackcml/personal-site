@@ -3,9 +3,41 @@ layout: default
 title: Home
 ---
 
+<section class="homepage-feature" aria-label="Featured app and webcat game">
+<article class="featured-app" aria-labelledby="misapad-title">
+  <div class="featured-app-titlebar">
+    <span>featured_deployment.html</span>
+    <span class="live-indicator"><i aria-hidden="true"></i> live now</span>
+  </div>
+
+  <div class="featured-app-body">
+    <p class="section-number">new on the internet / 01</p>
+    <h1 id="misapad-title">misa<span>pad</span></h1>
+    <p class="featured-app-lede">An LLM pair-writing frontend, updated for the chat-completion era.</p>
+    <p class="featured-app-copy">
+      The app is deployed and ready to use in the browser. Bring a thought,
+      find a model, and write something together.
+    </p>
+
+    <div class="featured-app-actions">
+      <a class="launch-app" href="https://misapad.jackl.cat/">launch misapad <span aria-hidden="true">↗</span></a>
+      <a class="repo-link" href="https://github.com/jackcml/misapad">view source on GitHub</a>
+    </div>
+
+    <dl class="featured-app-facts">
+      <div><dt>type</dt><dd>live web app</dd></div>
+      <div><dt>address</dt><dd>misapad.jackl.cat</dd></div>
+    </dl>
+  </div>
+
+  <div class="featured-app-marquee" aria-hidden="true">
+    <span>write / respond / revise / continue /</span>
+  </div>
+</article>
+
 <section class="webcat-game" aria-labelledby="webcat-title">
   <div class="webcat-titlebar">
-    <h1 id="webcat-title">webcat.exe :: purr acquisition terminal</h1>
+    <h2 id="webcat-title">webcat.exe :: purr acquisition terminal</h2>
     <span class="save-status" aria-hidden="true">[ autosave: on ]</span>
   </div>
 
@@ -67,6 +99,7 @@ title: Home
     <p>progress lives in this browser only</p>
     <button class="reset-game" type="button">erase save</button>
   </footer>
+</section>
 </section>
 
 <div class="tiny-divider" aria-hidden="true"><span>*</span><span>+</span><span>*</span></div>
