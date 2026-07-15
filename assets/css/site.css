@@ -301,7 +301,7 @@ a:focus-visible {
   border: 1.5px solid var(--line);
   border-radius: 3px;
   background: var(--panel);
-  box-shadow: 7px 7px 0 var(--green-soft), 8.5px 8.5px 0 var(--line);
+  box-shadow: 5px 5px 0 var(--shadow);
   flex-direction: column;
 }
 
@@ -462,7 +462,7 @@ a:focus-visible {
   border: 1.5px solid var(--line);
   border-radius: 3px;
   background: var(--panel);
-  box-shadow: 7px 7px 0 var(--pink-soft), 8.5px 8.5px 0 var(--line);
+  box-shadow: 5px 5px 0 var(--shadow);
 }
 
 .webcat-game::after {
@@ -775,7 +775,7 @@ a:focus-visible {
 /* Compact game treatment when it shares the feature row. */
 .homepage-feature .webcat-game {
   min-width: 0;
-  box-shadow: 6px 6px 0 var(--pink-soft), 7.5px 7.5px 0 var(--line);
+  box-shadow: 5px 5px 0 var(--shadow);
 }
 
 .homepage-feature .webcat-game-grid { grid-template-columns: 1fr; }
