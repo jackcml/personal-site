@@ -5,6 +5,10 @@
 #    - Web
 #    - Writing
 
+- name: misapad
+  description: "LLM pair-writing frontend, updated for the chat-completion era."
+  url: https://github.com/jackcml/misapad
+
 - name: DggNative
   description: "Cross-platform GUI chat client for use with Destiny.gg WebSocket protocol, plus a drop-in, open alternative server."
   url: https://github.com/jackcml/DggNative
