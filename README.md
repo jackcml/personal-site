@@ -49,6 +49,31 @@ The `unpublished` boolean holds back auto-publication on `date`.
 Set `drop_cap: false` to disable the oversized first letter on a post whose
 opening paragraph is too short for it. Drop caps are enabled by default.
 
+## Post images
+
+Keep each post's images in a folder named with the post's URL slug:
+
+```text
+assets/images/posts/post-title/image-name.png
+```
+
+For a plain image without a caption, use ordinary Markdown with Jekyll's
+`relative_url` filter:
+
+```markdown
+![Alt text]({{ '/assets/images/posts/post-title/image-name.png' | relative_url }})
+```
+
+For a captioned image, use the figure include:
+
+```liquid
+{% include figure.html
+  src="/assets/images/posts/post-title/image-name.png"
+  alt="Alt text"
+  caption="An optional caption."
+%}
+```
+
 ## Project link format
 
 Edit `_data/projects.yml`.
