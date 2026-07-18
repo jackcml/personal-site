@@ -34,6 +34,18 @@
   status: in-progress
   started_date: 2026-07-17
 
+- title: Determinism and the Paradox of Predictability
+  author: Rummens & Cuypers
+  kind: paper
+  status: finished
+  read_date: 2026-07-19
+
+- title: The Comprehensive Case For God Summarized Extremely Quickly
+  author: Bentham's Bulldog
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-19
+
 - title: The Odyssey of Homer, "Introduction"
   author: Richard Lattimore
   kind: book-section
@@ -43,12 +55,6 @@
 - title: Meltdown
   author: Nick Land
   kind: short-story
-  status: finished
-  read_date: 2026-07-13
-
-- title: Determinism and the Paradox of Predictability
-  author: Rummens & Cuypers
-  kind: paper
   status: finished
   read_date: 2026-07-13
 
