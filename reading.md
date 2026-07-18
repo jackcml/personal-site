@@ -11,51 +11,77 @@ permalink: /reading/
     <h1>bookshelf</h1>
   </header>
 
-  {% assign reading_items = site.data.reading | sort: "read_date" | reverse %}
-  {% if reading_items.size > 0 %}
-    <div class="reading-ledger">
+  {% assign reading_items = site.data.reading %}
+  {% assign current_items = reading_items | where: "status", "in-progress" | sort: "started_date" | reverse %}
+  {% assign completed_items = reading_items | where_exp: "item", "item.status != 'in-progress'" | sort: "read_date" | reverse %}
+
+  {% assign notes_count = 0 %}
+  {% assign current_plain_count = 0 %}
+  {% assign quick_count = 0 %}
+  {% for item in reading_items %}
+    {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
+    {% if matching_note %}
+      {% assign notes_count = notes_count | plus: 1 %}
+    {% elsif item.status == "in-progress" %}
+      {% assign current_plain_count = current_plain_count | plus: 1 %}
+    {% else %}
+      {% assign quick_count = quick_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+
+  {% if notes_count > 0 %}
+    <section class="reading-ledger reading-noted" aria-labelledby="reading-notes-heading">
       <div class="reading-ledger-titlebar">
-        <span>reading.log</span>
-        <span>{{ reading_items.size }} item{% if reading_items.size != 1 %}s{% endif %}</span>
+        <span id="reading-notes-heading">notes</span>
+        <span>{{ notes_count }} entr{% if notes_count == 1 %}y{% else %}ies{% endif %}</span>
       </div>
+      <div class="reading-items">
+        {% for item in current_items %}
+          {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
+          {% if matching_note %}{% include reading-item.html item=item current=true %}{% endif %}
+        {% endfor %}
+        {% for item in completed_items %}
+          {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
+          {% if matching_note %}{% include reading-item.html item=item %}{% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 
-      {% assign previous_year = "" %}
-      {% for item in reading_items %}
-        {% assign item_year = item.read_date | date: "%Y" %}
-        {% if item_year != previous_year %}
-          {% unless forloop.first %}</div></section>{% endunless %}
-          <section class="reading-year" aria-labelledby="year-{{ item_year }}">
-            <div class="reading-year-label">
-              <h2 id="year-{{ item_year }}">{{ item_year }}</h2>
-            </div>
-            <div class="reading-items">
-          {% assign previous_year = item_year %}
-        {% endif %}
+  {% if current_plain_count > 0 %}
+    <section class="reading-ledger reading-current" aria-labelledby="currently-reading-heading">
+      <div class="reading-ledger-titlebar">
+        <span id="currently-reading-heading">currently reading</span>
+        <span>{{ current_plain_count }} active</span>
+      </div>
+      <div class="reading-items">
+        {% for item in current_items %}
+          {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
+          {% unless matching_note %}{% include reading-item.html item=item current=true %}{% endunless %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 
-        {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
-        <article class="reading-item">
-          <time datetime="{{ item.read_date | date: '%Y-%m-%d' }}">{{ item.read_date | date: "%b %-d" }}</time>
-          <div class="reading-item-copy">
-            <h3>{{ item.title }}</h3>
-            {% if item.author %}<p>{{ item.author }}</p>{% endif %}
-            <div class="reading-item-meta">
-              {% if item.kind %}<span>{{ item.kind }}</span>{% endif %}
-              {% if item.status %}<span>{{ item.status }}</span>{% endif %}
-            </div>
-          </div>
-          <div class="reading-item-links">
-            {% if matching_note %}<a class="reading-notes-link" href="{{ matching_note.url | relative_url }}">notes →</a>{% endif %}
-            {% if item.url %}<a href="{{ item.url }}">source ↗</a>{% endif %}
-          </div>
-        </article>
+  {% if quick_count > 0 %}
+    <section class="reading-ledger reading-quick" aria-labelledby="quick-log-heading">
+      <div class="reading-ledger-titlebar">
+        <span id="quick-log-heading">quick log</span>
+        <span>{{ quick_count }} item{% if quick_count != 1 %}s{% endif %}</span>
+      </div>
+      <div class="reading-items">
+        {% for item in completed_items %}
+          {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
+          {% unless matching_note %}{% include reading-item.html item=item compact=true %}{% endunless %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 
-        {% if forloop.last %}</div></section>{% endif %}
-      {% endfor %}
-    </div>
-  {% else %}
+  {% if reading_items.size == 0 %}
     <div class="empty-shelf">
       <span aria-hidden="true">[&nbsp;&nbsp;&nbsp;]</span>
-      <p><strong>The shelf is empty for now.</strong> The next finished thing will go here.</p>
+      <p><strong>The shelf is empty for now.</strong> The next thing will go here.</p>
     </div>
   {% endif %}
 </div>

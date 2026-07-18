@@ -2,6 +2,7 @@
   title: Meditations on First Philosophy
   author: René Descartes
   kind: book
+  tags: philosophy
   status: finished
   read_date: 2026-07-07
 
@@ -9,6 +10,304 @@
   title: Compatibilism (Stanford Encyclopedia of Philosophy)
   author: M. McKenna, D. J. Coates
   kind: book-section
+  tags: philosophy
   status: in-progress
-  read_date: 2026-06-21
+  started_date: 2026-06-21
   url: https://plato.stanford.edu/entries/compatibilism/
+
+- title: Odyssey (trans. Mendelsohn)
+  author: Homer
+  kind: book
+  status: in-progress
+  started_date: 2026-07-20
+
+- title: The Possibility of an Island
+  author: Michel Houellebecq
+  kind: novel
+  status: in-progress
+  started_date: 2026-07-18
+
+- title: Ethics
+  author: Baruch Spinoza
+  kind: book
+  tags: philosophy
+  status: in-progress
+  started_date: 2026-07-17
+
+- title: Meltdown
+  author: Nick Land
+  kind: short-story
+  status: finished
+  read_date: 2026-07-13
+
+- title: Determinism and the Paradox of Predictability
+  author: Rummens & Cuypers
+  kind: paper
+  status: finished
+  read_date: 2026-07-13
+
+- title: A Clockwork Orange
+  author: Anthony Burgess
+  kind: novel
+  status: finished
+  read_date: 2026-07-12
+
+- title: The End of Reading Is Here
+  author: Rose Horowitch
+  kind: magazine-article
+  status: finished
+  read_date: 2026-07-12
+
+- title: The Two Standpoints on the Will
+  author: Daniel Guevara
+  kind: paper
+  status: finished
+  read_date: 2026-07-11
+
+- title: "Nadsat: The Argot and Its Implications in Anthony Burgess' \"A Clockwork Orange\""
+  author: Robert Evans
+  kind: paper
+  status: finished
+  read_date: 2026-07-10
+
+- title: "Review of The Annotated Lolita, Alfred Appel, Jr."
+  author: Dean Flower
+  kind: paper
+  status: finished
+  read_date: 2026-07-09
+
+- title: Stories of Your Life and Others
+  author: Ted Chiang
+  kind: short-story-collection
+  status: finished
+  read_date: 2026-07-09
+
+- title: Reactionary Philosophy In An Enormous Planet Sized Nutshell
+  author: Scott Alexander
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-08
+
+- title: Promising The Moon
+  author: Scott Alexander
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-06
+
+- title: An Essential Unpredictability in Human Behavior
+  author: Michael Scriven
+  kind: paper
+  status: finished
+  read_date: 2026-07-06
+
+- title: In Favor of Niceness, Community, and Civilization
+  author: Scott Alexander
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-05
+
+- title: Counterfactuals for Perfect Predictors
+  author: Chris_Leong
+  kind: forum-post
+  status: finished
+  read_date: 2026-07-05
+
+- title: On the Logical Indeterminacy of a Free Choice
+  author: D. M. MacKay
+  kind: paper
+  status: finished
+  read_date: 2026-07-05
+
+- title: What's expected of us
+  author: Ted Chiang
+  kind: short-story
+  status: finished
+  read_date: 2026-07-04
+
+- title: Clarity didn’t work, trying mysterianism
+  author: Scott Alexander
+  kind: short-story
+  status: finished
+  read_date: 2026-07-04
+
+- title: The Inside Story Of Leverage Research 1.0
+  author: Lydia Laurenson
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-04
+
+- title: The repulsive crust
+  author: Sam Kriss
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-04
+
+- title: The AI Superforecasters Are Here
+  author: Scott Alexander
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-02
+
+- title: Ezra Klein Is A Republican
+  author: Libertarian Development
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-02
+
+- title: The Human Stain
+  author: Phillip Roth
+  kind: novel
+  status: finished
+  read_date: 2026-06-29
+
+- title: "Accelerationism and Acid Communism: Notes on Theory and Praxis"
+  author: xenogothic
+  kind: blog-post
+  status: finished
+  read_date: 2026-06-28
+
+- title: "Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs"
+  author: Gekhman et al.
+  kind: paper
+  status: finished
+  read_date: 2026-06-28
+
+- title: "L.P.D.: Libertarian Police Department"
+  author: Tom O'Donnell
+  kind: magazine-article
+  status: finished
+  read_date: 2026-06-28
+
+- title: "Intergalactic Torture Chambers"
+  author: Bentham's Bulldog
+  kind: blog-post
+  status: finished
+  read_date: 2026-06-22
+
+- title: Nicomachean Ethics
+  author: Aristotle
+  kind: book
+  tags: philosophy
+  status: finished
+  read_date: 2026-06-17
+
+- title: The Elementary Particles
+  author: Michel Houellebecq
+  kind: novel
+  status: finished
+  read_date: 2026-06-14
+
+- title: Heaven
+  author: Mieko Kawakami
+  kind: novel
+  status: finished
+  read_date: 2026-06-08
+
+- title: The Republic
+  author: Plato
+  kind: book
+  tags: philosophy
+  status: finished
+  read_date: 2026-06-06
+
+- title: The internet is already over
+  author: Sam Kriss
+  kind: blog-post
+  status: finished
+  read_date: 2026-06-01
+
+- title: Books are subjectivity-merging devices, not efficient information transfer devices
+  author: Sasha Chapin
+  kind: blog-post
+  status: finished
+  read_date: 2026-06-01
+
+- title: If you let AI do your writing, I will come to your house and kill you
+  author: Sam Kriss
+  kind: blog-post
+  status: finished
+  read_date: 2026-05-30
+
+- title: Notes on a non-profit indicted for bank fraud
+  author: Patrick McKenzie
+  kind: blog-post
+  status: finished
+  read_date: 2026-05-28
+
+- title: Why Did the Murders Stop in Baltimore?
+  author: Charles Lehman
+  kind: newspaper-article
+  status: finished
+  read_date: 2026-05-28
+
+- title: The Fable of the Dragon‐Tyrant
+  author: Nick Bostrom
+  kind: short-story
+  status: finished
+  read_date: 2026-05-27
+
+- title: A Sweeping Theory of Everything Is Revolutionizing the Democratic Party
+  author: Jonathan Chait
+  kind: magazine-article
+  status: finished
+  read_date: 2026-05-26
+
+- title: "AI Alignment: The Case for Including Animals"
+  author: Tse et al.
+  kind: paper
+  status: finished
+  read_date: 2026-05-26
+
+- title: Lena
+  author: qntm
+  kind: short-story
+  status: finished
+  read_date: 2026-05-26
+
+- title: Machines of Loving Grace
+  author: Dario Amodei
+  kind: blog-post
+  status: finished
+  read_date: 2026-05-25
+
+- title: Submission
+  author: Michel Houellebecq
+  kind: novel
+  status: finished
+  read_date: 2026-01-16
+
+- title: Madame Bovary (trans. Davis)
+  author: Gustave Flaubert
+  kind: novel
+  status: finished
+  read_date: 2026-01-13
+
+- title: My First Book
+  author: Honor Levy
+  kind: short-story-collection
+  status: finished
+  read_date: 2025-12-15
+
+- title: Lolita
+  author: Vladimir Nabokov
+  kind: novel
+  status: finished
+  read_date: 2025-11-02
+
+- title: The Coin
+  author: Yasmin Zaher
+  kind: novel
+  status: finished
+  read_date: 2024-12-13
+
+- title: My Year of Rest and Relaxation
+  author: Ottessa Moshfegh
+  kind: novel
+  status: finished
+  read_date: 2024-06-19
+
+- title: Pride and Prejudice
+  author: Jane Austen
+  kind: novel
+  status: finished
+  read_date: 2024-05-21

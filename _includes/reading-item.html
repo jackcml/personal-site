@@ -1,0 +1,44 @@
+{% assign item = include.item %}
+{% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
+{% assign item_date = item.read_date %}
+{% assign date_label = "read" %}
+{% if include.current %}
+  {% assign item_date = item.started_date | default: item.read_date %}
+  {% assign date_label = "started" %}
+{% endif %}
+
+<article class="reading-item{% if matching_note %} reading-item--has-notes{% endif %}{% if include.compact %} reading-item--compact{% endif %}">
+  <div class="reading-item-date">
+    <span>{{ date_label }}</span>
+    {% if item_date %}
+      <time datetime="{{ item_date | date: '%Y-%m-%d' }}">{{ item_date | date: "%b %-d, %Y" }}</time>
+    {% else %}
+      <span>date unknown</span>
+    {% endif %}
+  </div>
+  <div class="reading-item-copy">
+    {% if include.compact %}
+      <div class="reading-item-heading">
+        <h3>{{ item.title }}</h3>
+        {% if item.author %}<span class="reading-item-author">— {{ item.author }}</span>{% endif %}
+        {% if item.kind %}<span class="reading-item-kind">· {{ item.kind }}</span>{% endif %}
+      </div>
+    {% else %}
+      <h3>{{ item.title }}</h3>
+      {% if item.author %}<p>{{ item.author }}</p>{% endif %}
+      {% if include.current or item.kind or item.progress %}
+        <div class="reading-item-meta">
+          {% if include.current %}<span>reading now</span>{% endif %}
+          {% if item.kind %}<span>{{ item.kind }}</span>{% endif %}
+          {% if item.progress %}<span>{{ item.progress }}</span>{% endif %}
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+  {% if matching_note or item.url %}
+    <div class="reading-item-links">
+      {% if matching_note %}<a class="reading-notes-link" href="{{ matching_note.url | relative_url }}">notes →</a>{% endif %}
+      {% if item.url %}<a href="{{ item.url }}">source ↗</a>{% endif %}
+    </div>
+  {% endif %}
+</article>

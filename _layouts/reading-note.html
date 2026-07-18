@@ -14,10 +14,16 @@ layout: default
 
     {% if reading_match %}
       <dl class="reading-note-facts">
-        {% if reading_match.read_date %}
+        {% assign note_date = reading_match.read_date %}
+        {% assign note_date_label = "read" %}
+        {% if reading_match.status == "in-progress" %}
+          {% assign note_date = reading_match.started_date | default: reading_match.read_date %}
+          {% assign note_date_label = "started" %}
+        {% endif %}
+        {% if note_date %}
         <div>
-          <dt>read</dt>
-          <dd><time datetime="{{ reading_match.read_date | date: '%Y-%m-%d' }}">{{ reading_match.read_date | date: "%B %-d, %Y" }}</time></dd>
+          <dt>{{ note_date_label }}</dt>
+          <dd><time datetime="{{ note_date | date: '%Y-%m-%d' }}">{{ note_date | date: "%B %-d, %Y" }}</time></dd>
         </div>
         {% endif %}
         {% if reading_match.url %}

@@ -80,8 +80,8 @@ Edit `_data/projects.yml`.
 
 ## Reading log format
 
-Add reading-log entries to `_data/reading.yml`. Each entry needs a stable `id`,
-title, and ISO-formatted `read_date`; the other fields are optional:
+Add reading-log entries to `_data/reading.yml`. Each entry needs a stable `id`
+and title. Finished entries use an ISO-formatted `read_date`:
 
 ```yaml
 - id: the-dispossessed
@@ -93,7 +93,23 @@ title, and ISO-formatted `read_date`; the other fields are optional:
   url: https://example.com/the-dispossessed
 ```
 
-The reading page sorts entries by `read_date` and groups them by year.
+For something currently underway, use `status: in-progress` and a
+`started_date` instead. An optional `progress` string is shown alongside its
+kind:
+
+```yaml
+- id: the-brothers-karamazov
+  title: The Brothers Karamazov
+  author: Fyodor Dostoevsky
+  kind: book
+  status: in-progress
+  started_date: 2026-07-17
+  progress: "p. 184 / 824"
+```
+
+Entries with associated notes appear first, regardless of reading status.
+Note-less entries that are currently underway appear next, followed by a compact
+quick log of finished entries without notes. Each group is sorted newest-first.
 
 For an entry with notes, add a Markdown file to `_reading_notes/`. Its
 `reading_id` must match the entry's `id`; no title, author, or date needs to be
