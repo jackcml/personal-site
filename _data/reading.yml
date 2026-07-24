@@ -34,6 +34,24 @@
   status: in-progress
   started_date: 2026-07-17
 
+- title: An Opinionated Introduction to Newcombology
+  author: Flo Bacus
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-23
+
+- title: "AI Kill Switch Act [Draft bill]"
+  author: Ted Lieu
+  kind: legal
+  status: finished
+  read_date: 2026-07-23
+
+- title: Taking the Singularity Seriously
+  author: Beren Millidge
+  kind: short-story
+  status: finished
+  read_date: 2026-07-21
+
 - title: Determinism and the Paradox of Predictability
   author: Rummens & Cuypers
   kind: paper
