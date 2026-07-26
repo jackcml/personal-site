@@ -107,9 +107,35 @@ kind:
   progress: "p. 184 / 824"
 ```
 
+For something started but not currently active, use `status: paused`. Paused
+entries also use `started_date` and may include `progress`:
+
+```yaml
+- id: ulysses
+  title: Ulysses
+  author: James Joyce
+  kind: novel
+  status: paused
+  started_date: 2026-07-01
+  progress: "p. 96 / 730"
+```
+
+The want-to-read list uses `status: to-read`. An optional `added_date` controls
+its newest-first ordering and is shown in the compact row:
+
+```yaml
+- id: the-left-hand-of-darkness
+  title: The Left Hand of Darkness
+  author: Ursula K. Le Guin
+  kind: novel
+  status: to-read
+  added_date: 2026-07-26
+```
+
 Entries with associated notes appear first, regardless of reading status.
-Note-less entries that are currently underway appear next, followed by a compact
-quick log of finished entries without notes. Each group is sorted newest-first.
+Note-less entries that are currently underway appear next, followed by paused
+entries and a compact quick log of finished entries. The compact to-read list
+appears last. Each group is sorted newest-first.
 
 For an entry with notes, add a Markdown file to `_reading_notes/`. Its
 `reading_id` must match the entry's `id`; no title, author, or date needs to be

@@ -13,19 +13,27 @@ permalink: /reading/
 
   {% assign reading_items = site.data.reading %}
   {% assign current_items = reading_items | where: "status", "in-progress" | sort: "started_date" | reverse %}
-  {% assign completed_items = reading_items | where_exp: "item", "item.status != 'in-progress'" | sort: "read_date" | reverse %}
+  {% assign paused_items = reading_items | where: "status", "paused" | sort: "started_date" | reverse %}
+  {% assign completed_items = reading_items | where: "status", "finished" | sort: "read_date" | reverse %}
+  {% assign to_read_items = reading_items | where: "status", "to-read" | sort: "added_date" | reverse %}
 
   {% assign notes_count = 0 %}
   {% assign current_plain_count = 0 %}
+  {% assign paused_count = 0 %}
   {% assign quick_count = 0 %}
+  {% assign to_read_count = 0 %}
   {% for item in reading_items %}
     {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
     {% if matching_note %}
       {% assign notes_count = notes_count | plus: 1 %}
     {% elsif item.status == "in-progress" %}
       {% assign current_plain_count = current_plain_count | plus: 1 %}
-    {% else %}
+    {% elsif item.status == "paused" %}
+      {% assign paused_count = paused_count | plus: 1 %}
+    {% elsif item.status == "finished" %}
       {% assign quick_count = quick_count | plus: 1 %}
+    {% elsif item.status == "to-read" %}
+      {% assign to_read_count = to_read_count | plus: 1 %}
     {% endif %}
   {% endfor %}
 
@@ -40,9 +48,17 @@ permalink: /reading/
           {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
           {% if matching_note %}{% include reading-item.html item=item current=true %}{% endif %}
         {% endfor %}
+        {% for item in paused_items %}
+          {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
+          {% if matching_note %}{% include reading-item.html item=item paused=true %}{% endif %}
+        {% endfor %}
         {% for item in completed_items %}
           {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
           {% if matching_note %}{% include reading-item.html item=item %}{% endif %}
+        {% endfor %}
+        {% for item in to_read_items %}
+          {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
+          {% if matching_note %}{% include reading-item.html item=item to_read=true %}{% endif %}
         {% endfor %}
       </div>
     </section>
@@ -63,6 +79,21 @@ permalink: /reading/
     </section>
   {% endif %}
 
+  {% if paused_count > 0 %}
+    <section class="reading-ledger reading-paused" aria-labelledby="paused-reading-heading">
+      <div class="reading-ledger-titlebar">
+        <span id="paused-reading-heading">paused</span>
+        <span>{{ paused_count }} on hold</span>
+      </div>
+      <div class="reading-items">
+        {% for item in paused_items %}
+          {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
+          {% unless matching_note %}{% include reading-item.html item=item paused=true %}{% endunless %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
   {% if quick_count > 0 %}
     <section class="reading-ledger reading-quick" aria-labelledby="quick-log-heading">
       <div class="reading-ledger-titlebar">
@@ -73,6 +104,21 @@ permalink: /reading/
         {% for item in completed_items %}
           {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
           {% unless matching_note %}{% include reading-item.html item=item compact=true %}{% endunless %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if to_read_count > 0 %}
+    <section class="reading-ledger reading-to-read" aria-labelledby="to-read-heading">
+      <div class="reading-ledger-titlebar">
+        <span id="to-read-heading">to read</span>
+        <span>{{ to_read_count }} item{% if to_read_count != 1 %}s{% endif %}</span>
+      </div>
+      <div class="reading-items">
+        {% for item in to_read_items %}
+          {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
+          {% unless matching_note %}{% include reading-item.html item=item compact=true to_read=true %}{% endunless %}
         {% endfor %}
       </div>
     </section>

@@ -1045,7 +1045,9 @@ a:focus-visible {
 .reading-ledger-titlebar span:last-child { color: var(--muted); }
 
 .reading-noted,
-.reading-current {
+.reading-current,
+.reading-paused,
+.reading-quick {
   margin-bottom: 2rem;
 }
 
@@ -1057,6 +1059,10 @@ a:focus-visible {
   display: flex;
   align-items: center;
   gap: 0.45rem;
+}
+
+.reading-paused .reading-ledger-titlebar {
+  background: var(--yellow);
 }
 
 .reading-item {
@@ -1145,7 +1151,8 @@ a:focus-visible {
   box-shadow: 3px 3px 0 var(--line);
 }
 
-.reading-quick .reading-ledger-titlebar {
+.reading-quick .reading-ledger-titlebar,
+.reading-to-read .reading-ledger-titlebar {
   background: var(--paper);
 }
 

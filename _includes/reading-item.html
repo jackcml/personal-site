@@ -2,9 +2,12 @@
 {% assign matching_note = site.reading_notes | where: "reading_id", item.id | first %}
 {% assign item_date = item.read_date %}
 {% assign date_label = "read" %}
-{% if include.current %}
+{% if include.current or include.paused %}
   {% assign item_date = item.started_date | default: item.read_date %}
   {% assign date_label = "started" %}
+{% elsif include.to_read %}
+  {% assign item_date = item.added_date %}
+  {% assign date_label = "added" %}
 {% endif %}
 
 <article class="reading-item{% if matching_note %} reading-item--has-notes{% endif %}{% if include.compact %} reading-item--compact{% endif %}">
@@ -26,9 +29,10 @@
     {% else %}
       <h3>{{ item.title }}</h3>
       {% if item.author %}<p>{{ item.author }}</p>{% endif %}
-      {% if include.current or item.kind or item.progress %}
+      {% if include.current or include.paused or item.kind or item.progress %}
         <div class="reading-item-meta">
           {% if include.current %}<span>reading now</span>{% endif %}
+          {% if include.paused %}<span>paused</span>{% endif %}
           {% if item.kind %}<span>{{ item.kind }}</span>{% endif %}
           {% if item.progress %}<span>{{ item.progress }}</span>{% endif %}
         </div>
