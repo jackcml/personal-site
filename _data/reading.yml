@@ -11,28 +11,41 @@
   author: M. McKenna, D. J. Coates
   kind: book-section
   tags: philosophy
-  status: in-progress
+  status: paused
   started_date: 2026-06-21
   url: https://plato.stanford.edu/entries/compatibilism/
 
 - title: Odyssey (trans. Mendelsohn)
   author: Homer
   kind: book
-  status: in-progress
+  status: paused
   started_date: 2026-07-20
 
 - title: The Possibility of an Island
   author: Michel Houellebecq
   kind: novel
-  status: in-progress
+  status: finished
   started_date: 2026-07-18
+  read_date: 2026-07-25
 
 - title: Ethics
   author: Baruch Spinoza
   kind: book
   tags: philosophy
-  status: in-progress
+  status: paused
   started_date: 2026-07-17
+
+- title: Civilization and Its Discontents
+  author: Sigmund Freud
+  kind: book
+  status: in-progress
+  started_date: 2026-07-26
+
+- title: On What It Means To Be Sincerely Religious
+  author: Prudence Primrose
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-25
 
 - title: An Opinionated Introduction to Newcombology
   author: Flo Bacus
