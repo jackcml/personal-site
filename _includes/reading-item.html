@@ -15,8 +15,6 @@
     <span>{{ date_label }}</span>
     {% if item_date %}
       <time datetime="{{ item_date | date: '%Y-%m-%d' }}">{{ item_date | date: "%b %-d, %Y" }}</time>
-    {% else %}
-      <span>date unknown</span>
     {% endif %}
   </div>
   <div class="reading-item-copy">
