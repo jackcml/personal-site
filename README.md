@@ -152,3 +152,44 @@ Notes go here. They can use ordinary Markdown.
 The note will automatically receive a `/reading/<filename>/` page and a link
 from its reading-log entry. Entries without a matching note remain plain log
 items.
+
+## Importing from Goodreads
+
+`scripts/goodreads-to-reading.rb` converts a Goodreads library export into
+reading-log entries. It only prints to stdout — `_data/reading.yml` is never
+written to, so review the output and paste in what you want:
+
+```
+ruby scripts/goodreads-to-reading.rb goodreads_library_export.csv
+```
+
+Goodreads shelves map onto reading-log statuses like so:
+
+| Goodreads shelf     | `status`      | date field                  |
+| ------------------- | ------------- | --------------------------- |
+| `read`              | `finished`    | `read_date` ← Date Read     |
+| `currently-reading` | `in-progress` | `started_date` ← Date Added |
+| `to-read`           | `to-read`     | `added_date` ← Date Added   |
+| anything else       | `unknown`     | `added_date` ← Date Added   |
+
+Goodreads also allows custom exclusive shelves (`on-hold`, `dnf`, and so on).
+Those are converted too, but rather than guess at one of the four real statuses
+they get `status: unknown`. Note that `reading.md` buckets entries by the four
+known statuses, so an `unknown` entry will not appear on the page until it is
+given a real status by hand. Each one is named on stderr.
+
+The script deliberately omits `kind`, since Goodreads cannot distinguish a
+`novel` from a `book` or a `short-story-collection` — add it by hand where it is
+worth having. It also omits `id`, which is only needed once an entry has a note.
+Rows with no usable date are emitted without one and listed on stderr.
+
+Entries already present in `_data/reading.yml` (matched on title and author) are
+skipped by default. Useful flags:
+
+- `--no-skip-existing` — emit everything, including known duplicates
+- `--shelf SHELF` — convert only one shelf, custom names included; repeatable
+- `--fallback-date-added` — for read books with no Date Read, use Date Added
+- `--goodreads-url` — include a `url` pointing at the Goodreads book page
+
+Diagnostics all go to stderr, so `ruby scripts/goodreads-to-reading.rb export.csv
+>> _data/reading.yml` appends cleanly. Run with `--help` for the full list.
