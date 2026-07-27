@@ -870,10 +870,10 @@
   status: to-read
   added_date: 2026-05-16
 
-- title: Liberal Fascism (Žižek's Essays)
+- title: Liberal Fascisms
   author: Slavoj Žižek
-  status: unknown
-  added_date: 2026-05-15
+  status: paused
+  started_date: 2026-05-15
 
 - title: "Deep Utopia: Life and Meaning in a Solved World"
   author: Nick Bostrom
