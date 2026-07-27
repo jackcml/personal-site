@@ -127,7 +127,7 @@ def fold_key(*parts)
   parts.compact.map { |p| p.to_s.gsub(/[’‘“”‐–—]/, FOLD) }
        .join(' | ')
        .downcase
-       .gsub(/\s+/, ' ')
+       .gsub(/[[:space:]]+/, ' ')
        .strip
 end
 
@@ -139,8 +139,10 @@ rescue Date::Error
   nil
 end
 
+# Goodreads pads names and titles with runs of whitespace ("Roger    Williams"),
+# sometimes with non-breaking spaces, which \s does not match.
 def clean(value)
-  s = value.to_s.strip
+  s = value.to_s.gsub(/[[:space:]]+/, ' ').strip
   s.empty? ? nil : s
 end
 
