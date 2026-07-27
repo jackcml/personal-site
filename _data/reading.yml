@@ -15,6 +15,13 @@
   started_date: 2026-06-21
   url: https://plato.stanford.edu/entries/compatibilism/
 
+- title: OpenAI's myopia keeps causing alignment problems
+  author: Fiora Starlight
+  kind: blog-post
+  status: finished
+  read_date: 2026-07-27
+  url: https://www.lesswrong.com/posts/Mxx5GapJtqyQtpy96/what-the-hell-is-openai-s-problem
+
 - title: Odyssey (trans. Mendelsohn)
   author: Homer
   kind: book
@@ -46,24 +53,28 @@
   kind: blog-post
   status: finished
   read_date: 2026-07-25
+  url: https://wyrdfulness.substack.com/p/on-what-it-means-to-be-sincerely
 
 - title: An Opinionated Introduction to Newcombology
   author: Flo Bacus
   kind: blog-post
   status: finished
   read_date: 2026-07-23
+  url: https://morallawwithin.substack.com/p/an-opinionated-introduction-to-newcombology
 
 - title: "AI Kill Switch Act [Draft bill]"
   author: Ted Lieu
   kind: legal
   status: finished
   read_date: 2026-07-23
+  url: https://lieu.house.gov/sites/evo-subsites/lieu-evo.house.gov/files/evo-media-document/ai-kill-switch-act.pdf
 
 - title: Taking the Singularity Seriously
   author: Beren Millidge
   kind: short-story
   status: finished
   read_date: 2026-07-21
+  url: https://www.beren.io/2026-07-03-Taking-the-Singularity-Seriously/
 
 - title: Determinism and the Paradox of Predictability
   author: Rummens & Cuypers
@@ -76,6 +87,7 @@
   kind: blog-post
   status: finished
   read_date: 2026-07-19
+  url: https://benthams.substack.com/p/the-comprehensive-case-for-god-summarized
 
 - title: The Odyssey of Homer, "Introduction"
   author: Richard Lattimore
@@ -88,6 +100,7 @@
   kind: short-story
   status: finished
   read_date: 2026-07-13
+  url: http://www.ccru.net/swarm1/1_melt.htm
 
 - title: A Clockwork Orange
   author: Anthony Burgess
@@ -100,6 +113,7 @@
   kind: magazine-article
   status: finished
   read_date: 2026-07-12
+  url: https://www.theatlantic.com/magazine/2026/08/reading-crisis-postliterate-age/687618/
 
 - title: The Two Standpoints on the Will
   author: Daniel Guevara
@@ -130,12 +144,14 @@
   kind: blog-post
   status: finished
   read_date: 2026-07-08
+  url: https://slatestarcodex.com/2013/03/03/reactionary-philosophy-in-an-enormous-planet-sized-nutshell/
 
 - title: Promising The Moon
   author: Scott Alexander
   kind: blog-post
   status: finished
   read_date: 2026-07-06
+  url: https://slatestarcodex.com/2014/07/21/promising-the-moon/
 
 - title: An Essential Unpredictability in Human Behavior
   author: Michael Scriven
@@ -148,12 +164,14 @@
   kind: blog-post
   status: finished
   read_date: 2026-07-05
+  url: https://slatestarcodex.com/2014/02/23/in-favor-of-niceness-community-and-civilization/
 
 - title: Counterfactuals for Perfect Predictors
   author: Chris_Leong
   kind: forum-post
   status: finished
   read_date: 2026-07-05
+  url: https://www.lesswrong.com/posts/AKkFh3zKGzcYBiPo7/counterfactuals-for-perfect-predictors
 
 - title: On the Logical Indeterminacy of a Free Choice
   author: D. M. MacKay
@@ -172,30 +190,35 @@
   kind: short-story
   status: finished
   read_date: 2026-07-04
+  url: https://gwern.net/doc/fiction/science-fiction/2012-10-03-yvain-thewhisperingearring.html
 
 - title: The Inside Story Of Leverage Research 1.0
   author: Lydia Laurenson
   kind: blog-post
   status: finished
   read_date: 2026-07-04
+  url: https://lydialaurenson.substack.com/p/the-inside-story-of-leverage-research
 
 - title: The repulsive crust
   author: Sam Kriss
   kind: blog-post
   status: finished
   read_date: 2026-07-04
+  url: https://samkriss.substack.com/p/the-repulsive-crust
 
 - title: The AI Superforecasters Are Here
   author: Scott Alexander
   kind: blog-post
   status: finished
   read_date: 2026-07-02
+  url: https://www.astralcodexten.com/p/the-ai-superforecasters-are-here
 
 - title: Ezra Klein Is A Republican
   author: Libertarian Development
   kind: blog-post
   status: finished
   read_date: 2026-07-02
+  url: https://developmentalism.substack.com/p/ezra-klein-is-a-republican
 
 - title: The Human Stain
   author: Phillip Roth
@@ -208,6 +231,7 @@
   kind: blog-post
   status: finished
   read_date: 2026-06-28
+  url: https://xenogothic.com/2020/01/21/accelerationism-and-acid-communism-notes-on-theory-and-praxis/
 
 - title: "Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs"
   author: Gekhman et al.
@@ -220,12 +244,14 @@
   kind: magazine-article
   status: finished
   read_date: 2026-06-28
+  url: https://www.newyorker.com/humor/daily-shouts/l-p-d-libertarian-police-department
 
 - title: "Intergalactic Torture Chambers"
   author: Bentham's Bulldog
   kind: blog-post
   status: finished
   read_date: 2026-06-22
+  url: https://benthams.substack.com/p/intergalactic-torture-chambers
 
 - title: Nicomachean Ethics
   author: Aristotle
@@ -258,30 +284,35 @@
   kind: blog-post
   status: finished
   read_date: 2026-06-01
+  url: https://samkriss.substack.com/p/the-internet-is-already-over
 
 - title: Books are subjectivity-merging devices, not efficient information transfer devices
   author: Sasha Chapin
   kind: blog-post
   status: finished
   read_date: 2026-06-01
+  url: https://sashachapin.substack.com/p/books-are-subjectivity-merging-devices
 
 - title: If you let AI do your writing, I will come to your house and kill you
   author: Sam Kriss
   kind: blog-post
   status: finished
   read_date: 2026-05-30
+  url: https://samkriss.substack.com/p/if-you-let-ai-do-your-writing-i-will
 
 - title: Notes on a non-profit indicted for bank fraud
   author: Patrick McKenzie
   kind: blog-post
   status: finished
   read_date: 2026-05-28
+  url: https://www.bitsaboutmoney.com/archive/nonprofit-indicted-bank-fraud/
 
 - title: Why Did the Murders Stop in Baltimore?
   author: Charles Lehman
   kind: newspaper-article
   status: finished
   read_date: 2026-05-28
+  url: https://www.thefp.com/p/baltimore-crime-rate-drop
 
 - title: The Fable of the Dragon‐Tyrant
   author: Nick Bostrom
@@ -294,6 +325,7 @@
   kind: magazine-article
   status: finished
   read_date: 2026-05-26
+  url: https://www.theatlantic.com/ideas/2026/05/antitrust-theory-barry-lynn/687287/
 
 - title: "AI Alignment: The Case for Including Animals"
   author: Tse et al.
@@ -306,12 +338,14 @@
   kind: short-story
   status: finished
   read_date: 2026-05-26
+  url: https://qntm.org/mmacevedo
 
 - title: Machines of Loving Grace
   author: Dario Amodei
   kind: blog-post
   status: finished
   read_date: 2026-05-25
+  url: https://www.darioamodei.com/essay/machines-of-loving-grace
 
 - title: Submission
   author: Michel Houellebecq
@@ -640,11 +674,6 @@
   status: to-read
   added_date: 2026-06-09
 
-- title: Heaven
-  author: Mieko Kawakami
-  status: finished
-  read_date: 2026-06-08
-
 - title: "Illuminations: Essays and Reflections"
   author: Walter Benjamin
   status: to-read
@@ -873,6 +902,7 @@
 - title: Liberal Fascisms
   author: Slavoj Žižek
   status: paused
+  kind: essay-collection
   started_date: 2026-05-15
 
 - title: "Deep Utopia: Life and Meaning in a Solved World"
