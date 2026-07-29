@@ -15,12 +15,27 @@
   started_date: 2026-06-21
   url: https://plato.stanford.edu/entries/compatibilism/
 
+- title: Contempt
+  author: Alberto Moravia
+  status: to-read
+  added_date: 2026-07-28
+
+- title: Oblivion
+  author: David Foster Wallace
+  status: to-read
+  added_date: 2026-07-27
+
 - title: OpenAI's myopia keeps causing alignment problems
   author: Fiora Starlight
   kind: blog-post
   status: finished
   read_date: 2026-07-27
   url: https://www.lesswrong.com/posts/Mxx5GapJtqyQtpy96/what-the-hell-is-openai-s-problem
+
+- title: Man and His Symbols
+  author: Carl Jung
+  status: to-read
+  added_date: 2027-07-26
 
 - title: Odyssey (trans. Mendelsohn)
   author: Homer
