@@ -15,6 +15,33 @@
   started_date: 2026-06-21
   url: https://plato.stanford.edu/entries/compatibilism/
 
+- title: The Racial Crossroads
+  author: Helen Andrews
+  kind: magazine-article
+  status: finished
+  read_date: 2026-08-04
+  url: https://www.compactmag.com/article/the-racial-crossroads/
+
+- title: The Sorrows of Young Werther
+  author: Goethe
+  status: to-read
+  added_date: 2026-08-03
+
+- title: Atlas Shrugged
+  author: Ayn Rand
+  status: to-read
+  added_date: 2026-08-02
+
+- title: The Piano Teacher
+  author: Elfriede Jelinek
+  status: to-read
+  added_date: 2026-08-02
+
+- title: Digital Occultism
+  author: Sophie Publig
+  status: to-read
+  added_date: 2026-07-31
+
 - title: All Debates Are Bravery Debates
   author: Scott Alexander
   kind: blog-post
@@ -47,7 +74,7 @@
 - title: Odyssey (trans. Mendelsohn)
   author: Homer
   kind: book
-  status: paused
+  status: in-progress
   started_date: 2026-07-20
 
 - title: The Possibility of an Island
@@ -743,8 +770,9 @@
 
 - title: Harry Potter and the Methods of Rationality
   author: Eliezer Yudkowsky
-  status: to-read
+  status: in-progress
   added_date: 2026-05-26
+  started_date: 2026-08-04
 
 - title: "If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All"
   author: Eliezer Yudkowsky, Nate Soares
