@@ -15,6 +15,27 @@
   started_date: 2026-06-21
   url: https://plato.stanford.edu/entries/compatibilism/
 
+- title: Why I’m leaving OpenAI to build telepathy
+  author: Naomi Bashkansky
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-05
+  url: https://naomibashkansky.com/blog/telepathy/
+
+- title: "Generalized atheism rules out \"inaccurate simulation\"-ism."
+  author: Eliezer Yudkowsky
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-05
+  url: https://www.lesswrong.com/posts/KgwQchapx4vJDhfYC/generalized-atheism-rules-out-inaccurate-simulation-ism
+
+- title: "Guardian Angels: LLM Personalization for Productivity and Security"
+  author: Gwern Branwen
+  kind: blog-post
+  status : finished
+  read_date: 2026-08-04
+  url: https://gwern.net/guardian-angel
+
 - title: The Racial Crossroads
   author: Helen Andrews
   kind: magazine-article
