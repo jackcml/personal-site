@@ -15,6 +15,67 @@
   started_date: 2026-06-21
   url: https://plato.stanford.edu/entries/compatibilism/
 
+- title: The carrion-eaters
+  author: Sam Kriss
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-17
+  url: https://samkriss.substack.com/p/the-carrion-eaters
+
+- title: Bad Behavior
+  author: Mary Gaitskill
+  kind: short-story-collection
+  status: in-progress
+  started_date: 2026-08-15
+
+- title: The no-human future
+  author: Vincent Lê
+  kind: magazine-article
+  status: finished
+  read_date: 2026-08-10
+  url: https://aeon.co/essays/what-is-nick-lands-philosophy-of-accelerationism-really
+
+- title: models may behave differently in graded episodes (a tirade)
+  author: nostalgebraist
+  kind: blog-post
+  status: to-read
+  date_added: 2026-08-08
+  url: https://www.lesswrong.com/posts/AfoGGrJfuNzofpzWL/models-may-behave-differently-in-graded-episodes-a-tirade
+
+- title: Thérèse Raquin
+  author: Émile Zola
+  status: to-read
+  date_added: 2026-08-08
+
+- title: Faust
+  author: Goethe
+  status: to-read
+  date_added: 2026-08-07
+
+- title: Mephisto
+  author: Klaus Mann
+  status: to-read
+  date_added: 2026-08-07
+
+- title: Utilitarianism as a Sleep Score
+  author: Celeste
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-08
+  url: https://ceselder.substack.com/p/utilitarianism-as-a-sleep-score
+
+- title: 8 Predictions for the Era of Continual Learning
+  author: Dwarkesh Patel
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-07
+  url: https://www.dwarkesh.com/p/era-of-continual-learning
+
+- title: "An Introduction to Hegel: Freedom, Truth and History"
+  author: Stephen Houlgate
+  status: to-read
+  added_date: 2026-08-05
+
 - title: Why I’m leaving OpenAI to build telepathy
   author: Naomi Bashkansky
   kind: blog-post
@@ -323,6 +384,12 @@
   read_date: 2026-06-22
   url: https://benthams.substack.com/p/intergalactic-torture-chambers
 
+- title: AI 2027
+  author: AI Futures Project
+  kind: blog-post
+  status: finished
+  read_date: 2026-06-20
+
 - title: Nicomachean Ethics
   author: Aristotle
   kind: book
@@ -335,6 +402,12 @@
   kind: novel
   status: finished
   read_date: 2026-06-14
+
+- title: Europe 2031
+  author: Daan Juijn et al.
+  kind: blog-post
+  status: finished
+  read_date: 2026-06-11
 
 - title: Heaven
   author: Mieko Kawakami
