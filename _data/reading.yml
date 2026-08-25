@@ -15,6 +15,50 @@
   started_date: 2026-06-21
   url: https://plato.stanford.edu/entries/compatibilism/
 
+- title: Arrangement
+  author: vanessa_cardui
+  kind: web-fiction
+  status: finished
+  read_date: 2026-08-24
+
+- title: Light Years
+  author: James Salter
+  kind: book
+  status: to-read
+  added_date: 2026-08-24
+
+- title: Against Nature
+  author: Joris-Karl Huysmans
+  kind: book
+  status: to-read
+  added_date: 2026-08-24
+
+- title: Dangerous Liasons
+  author: Pierre Choderlos de Laclos
+  kind: book
+  status: to-read
+  added_date: 2026-08-15
+
+- title: Why I’m Not Catholic
+  author: Bentham's Bulldog
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-23
+  url: https://benthams.substack.com/p/why-im-not-catholic
+
+- title: MR Tries The Safe Uncertainty Fallacy
+  author: Scott Alexander
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-22
+  url: https://www.astralcodexten.com/p/mr-tries-the-safe-uncertainty-fallacy
+
+- title: Did I Advocate Racial Segregation in Education?
+  author: Nathan Cofnas
+  kind: blog-post
+  read_date: 2026-08-21
+  url: https://nathancofnas.com/did-i-advocate-racial-segregation-in-education/
+
 - title: The carrion-eaters
   author: Sam Kriss
   kind: blog-post
