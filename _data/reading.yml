@@ -15,6 +15,95 @@
   started_date: 2026-06-21
   url: https://plato.stanford.edu/entries/compatibilism/
 
+- title: "Book Review: Reframing Superintelligence"
+  author: Scott Alexander
+  kind: blog-post
+  status: finished
+  read_date: 2026-09-04
+  url: https://slatestarcodex.com/2019/08/27/book-review-reframing-superintelligence/
+
+- title: Is the Jacobian space a global workspace?
+  author: David Chalmers
+  kind: paper
+  status: finished
+  read_date: 2026-09-04
+  url: https://philpapers.org/rec/CHAITJ-2
+
+- title: Absurd Adventure And Amygdalectomy Advocacy
+  author: Daniel Böttger
+  kind: blog-post
+  read_date: 2026-09-02
+  url: https://www.astralcodexten.com/p/absurd-adventure-and-amygdalectomy
+
+- title: AI Alignment is the Default
+  author: Nicholas Decker
+  kind: blog-post
+  status: finished
+  read_date: 2026-09-01
+  url: https://nicholasdecker.substack.com/p/ai-alignment-is-the-default
+
+- title: Nicholas Decker In Hell
+  author: Scott Alexander
+  kind: blog-post
+  status: finished
+  read_date: 2026-09-01
+  url: https://www.astralcodexten.com/p/nicholas-decker-in-hell
+
+- title: Can People Please Stop Being Morons About the Lindsay Clancy Case?
+  author: Bentham's Bulldog
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-29
+  url: https://benthams.substack.com/p/can-people-please-stop-being-morons
+
+- title: Liberalism Really Is Exhausted
+  author: Cassie Pritchard
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-26
+  url: https://cassandraproblem.substack.com/p/liberalism-really-is-exhausted
+
+- title: Contra Pritchard On Liberal Happiness
+  author: Scott Alexander
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-26
+  url: https://www.astralcodexten.com/p/contra-pritchard-on-liberal-happiness
+
+- title: Why Pro-Choicers Should Want to Reduce the Number of Abortions
+  author: Bentham's Bulldog
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-26
+  url: https://benthams.substack.com/p/why-pro-choicers-should-want-to-reduce
+
+- title: Public Choice Theory and the Illusion of Grand Strategy
+  author: Richard Hanania
+  kind: book
+  status: to-read
+  added_date: 2026-08-25
+
+- title: An interview with Werner Zagrebbi
+  author: Jacob Johnson and Werner Zagrebbi
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-25
+  url: https://thelionandthefox.substack.com/p/an-interview-with-werner-zagrebbi
+
+- title: Advice for smart, right-leaning Zoomers
+  author: Werner Zagrebbi
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-25
+  url: https://www.rightrationalism.art/p/advice-for-smart-right-leaning-zoomers
+
+- title: Why you should watch KIRAC
+  author: Werner Zagrebbi
+  kind: blog-post
+  status: finished
+  read_date: 2026-08-25
+  url: https://www.rightrationalism.art/p/trying-to-get-kirac-cowen-money
+
 - title: Arrangement
   author: vanessa_cardui
   kind: web-fiction
